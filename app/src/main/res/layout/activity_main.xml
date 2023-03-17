@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37dbff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Mainlogo"
+        android:layout_width="278dp"
+        android:layout_height="443dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138"
+        app:srcCompat="@drawable/icons_and_logo" />
+
+    <TextView
+        android:id="@+id/textlogo"
+        android:layout_width="343dp"
+        android:layout_height="125dp"
+        android:fontFamily="@font/bangers"
+        android:text="Pocket Guard"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:layout_marginTop="-100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mainlogo" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="139dp"
+        android:layout_height="33dp"
+        android:fontFamily="@font/bangers"
+        android:text="We Save Your Money"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
