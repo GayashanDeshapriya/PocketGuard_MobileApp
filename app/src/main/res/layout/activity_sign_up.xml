@@ -13,7 +13,9 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/icons_and_logo"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:contentDescription="@string/profile_picture_description"
+        />
 
     <TextView
         android:layout_width="250dp"
@@ -21,13 +23,13 @@
         android:layout_gravity="center"
         android:layout_marginTop="-20dp"
         android:fontFamily="@font/bangers"
-        android:text="Welcome Buddy"
-        android:textSize="40dp"
+        android:text="@string/welcome_buddy"
+        android:textSize="40sp"
         android:textAlignment="center"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SignUp to Start your new saving Journey"
+        android:text="@string/sign_msg"
         android:textSize="18sp"
         android:layout_marginTop="5dp"
         android:textAlignment="center"
@@ -37,18 +39,20 @@
     
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Full Name"
             android:layout_marginTop="10dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:textAppearance="@style/TextStyle"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name_hint"
+                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,11 +63,13 @@
             app:counterEnabled="true"
             app:counterMaxLength="15"
             android:layout_marginTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:textAppearance="@style/TextStyle"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,8 +78,8 @@
         android:layout_height="wrap_content"
         android:hint="E-mail"
             android:layout_marginTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
+            android:textAppearance="@style/TextStyle"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -83,24 +89,27 @@
         <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Full Name"
-            android:layout_marginTop="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextStyle"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="TouchTargetSizeCheck"
+                android:hint="@string/phone_hint"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/create_acc"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="Create Acount"
-            android:background="@drawable/button_bg"
+            android:text="@string/Create_Account"
+            android:background="@drawable/rounded_corner"
             android:layout_marginTop="25dp"
             android:layout_gravity="center"
-            android:shadowRadius="@integer/material_motion_duration_medium_1"
+            android:shadowRadius="@integer/material_motion_duration_medium_1"/>
 
 
 </LinearLayout>

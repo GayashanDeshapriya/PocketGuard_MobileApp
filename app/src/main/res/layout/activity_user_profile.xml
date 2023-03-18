@@ -5,6 +5,212 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".UserProfile">
+    tools:context=".UserProfile"
+    android:padding="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="20dp"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profile_icon" />
+            <TextView
+                android:id="@+id/fullname_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:fontFamily="@font/bangers"
+                android:includeFontPadding="false"
+                android:text="@string/full_name"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/username_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullname_field"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:includeFontPadding="false"
+                android:text="@string/user_name"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/edit_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_image"
+                android:layout_marginLeft="40dp"
+                android:includeFontPadding="false"
+                android:paddingTop="-2dp"
+                android:text="edit"
+                android:textSize="14sp" />
+
+
+       </RelativeLayout>
+
+        <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_width="match_parent"
+        android:padding="10dp">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="125dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            app:cardBackgroundColor="@color/blue_800"
+            app:cardElevation="10dp">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                >
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/payin"
+                    />
+                <TextView
+                    android:fontFamily="@font/bangers"
+                    android:id="@+id/payment_label"
+                    android:includeFontPadding="false"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="$500"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/payment_desc"
+                    android:includeFontPadding="false"
+                    android:layout_below="@id/payment_label"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Pay In"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_height="125dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        app:cardBackgroundColor="@color/blue_800"
+                        app:cardElevation="10dp">
+                        <RelativeLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:padding="15dp">
+                            <ImageView
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="30dp"
+                                android:layout_width="30dp"
+                                android:src="@drawable/payin" />
+
+                            <TextView
+                                android:id="@+id/payment_in"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/bangers"
+                                android:includeFontPadding="false"
+                                android:gravity="center"
+                                android:text="$150"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:id="@+id/payment_out"
+                                android:includeFontPadding="false"
+                                android:layout_below="@id/payment_in"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Pay Out"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/full_name"
+            android:hint="@string/full_name_hint"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/full_name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username_name"
+                android:hint="@string/user_name_hint"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/user_name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email"
+                android:hint="@string/email_hint"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/email"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone"
+                android:hint="@string/phone_hint"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/phone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:text="@string/update" />
+            <Button
+                android:id="@+id/back1"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="back" />
+
+
+    </LinearLayout>
 
 </LinearLayout>

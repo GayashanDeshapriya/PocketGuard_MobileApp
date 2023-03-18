@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#37dbff"
+    android:background="@color/blue_600"
     tools:context=".MainActivity">
 
     <ImageView
@@ -24,7 +24,7 @@
         android:layout_width="343dp"
         android:layout_height="125dp"
         android:fontFamily="@font/bangers"
-        android:text="Pocket Guard"
+        android:text="@string/app_name"
         android:textAlignment="center"
         android:textSize="60sp"
         android:layout_marginTop="-100dp"
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="33dp"
         android:fontFamily="@font/bangers"
-        android:text="We Save Your Money"
+        android:text="@string/slogan"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

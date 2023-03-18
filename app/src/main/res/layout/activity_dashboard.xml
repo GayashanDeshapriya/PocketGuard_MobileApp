@@ -14,22 +14,32 @@
         android:padding="10dp"
         android:background="@drawable/rounded_corner">
 
-        >
         <ImageView
             android:id="@+id/LogoImage"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/icons_and_logo"
+            android:src="@drawable/profile_icon"
             android:layout_centerHorizontal="true"
-            />
+            android:contentDescription="TODO" />
         <TextView
             android:id="@+id/LogoName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pocket Guard"
+            android:text="@string/app_name"
             android:fontFamily="@font/bangers"
-            android:textSize="40sp"
+            android:textSize="30sp"
             android:layout_below="@+id/LogoImage"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slogan"
+            android:fontFamily="@font/bangers"
+            android:textSize="15sp"
+            android:layout_below="@+id/LogoName"
             android:layout_gravity="center"
             android:layout_centerHorizontal="true"
             />
@@ -46,6 +56,7 @@
             android:padding="25dp">
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/expense_tracking"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
@@ -63,12 +74,12 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/expence"
-                        android:layout_gravity="center"
+                        android:layout_gravity="center"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Expense Tracking"
+                        android:text="@string/expense"
                         android:gravity="center"
                         android:textSize="24sp"
                         android:textStyle="bold"
@@ -84,6 +95,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/budget_manage_card"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
@@ -100,12 +112,12 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/budget"
-                        android:layout_gravity="center"
+                        android:layout_gravity="center"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Budget Manage"
+                        android:text="@string/budget"
                         android:gravity="center"
                         android:textSize="25sp"
                         android:textStyle="bold"/>
@@ -117,6 +129,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/saving_goals"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
@@ -133,7 +146,7 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/emergency"
-                        android:layout_gravity="center"
+                        android:layout_gravity="center"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -151,6 +164,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/emergency_fund"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
@@ -168,7 +182,7 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/saving"
-                        android:layout_gravity="center"
+                        android:layout_gravity="center"></ImageView>
 
                     <TextView
                         android:layout_width="match_parent"

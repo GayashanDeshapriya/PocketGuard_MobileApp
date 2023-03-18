@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class SignUp : AppCompatActivity() {
+class ExpenseTrackin_Main : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.activity_expense_trackin_main)
 
-        val createAccountbutton = findViewById<Button>(R.id.create_acc)
-        createAccountbutton.setOnClickListener {
+        val button = findViewById<Button>(R.id.back3)
+        button.setOnClickListener {
             val intent = Intent(this, Dashboard::class.java)
             startActivity(intent)
         }

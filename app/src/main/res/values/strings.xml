@@ -1,17 +1,53 @@
 <resources>
-    <string name="app_name">PocketGuard</string>
-    <string name="password_hint">ghksfdgyiisf</string>
-    <string name="password">Gayashan</string>
+    <string name="app_name">Pocket Guard</string>
+    <string name="slogan">We Save Your Money</string>
+
+    <string name="update">UPDATE</string>
+    <string name="welcome_message">Welcome</string>
+    <string name="full_name">Gayashan Deshapriya</string>
+    <string name="user_name">Gayashan99</string>
+    <string name="go">Go</string>
+    <string name="new_user">New User? SIGN UP</string>
+
+    <string name="welcome_buddy">Welcome Buddy</string>
+
+    <string name="full_name_hint">Full Name</string>
+    <string name="user_name_hint">User Name</string>
+    <string name="email_hint">E-mail</string>
+    <string name="phone_hint">Mobile No</string>
+
+    <string name="email">gayashan123@gmail.com</string>
+    <string name="phone">+94 1234567</string>
+
+    <string name="expense">Expense Tracking</string>
+    <string name="budget">Budget Manage</string>
+
+    <string name="Create_Account">Create Account</string>
+    <string name="sign_msg">Sign Up To Start Your New Journey</string>
+    <string name="Hello_there_welcome_back">Hello there welcome back</string>
     <string name="login_button">login</string>
-    <string name="username_hint">Gayashan</string>
-    <string name="username">Gayashan</string>
+    <string name="username_hint">User Name</string>
+    <string name="profile_picture_description">Profile pic description</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
+    <string name="password_hint">Password</string>
+    <string name="forget_password">Forget Password</string>
     <string name="action_sign_in">Sign in or register</string>
+    <string name="sign_in_continue">Sign in to continue</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+
+    <string name="goal">Your Goal</string>
+    <string name="goal_description">jgrenhiernbvhierhg</string>
+    <string name="amount">Your Amount</string>
+    <string name="amount_description">Rs 20000.00</string>
+    <string name="date">Date</string>
+    <string name="save">SAVING GOALS</string>
+
+
 </resources>
