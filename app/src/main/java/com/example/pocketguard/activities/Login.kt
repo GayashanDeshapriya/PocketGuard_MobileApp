@@ -1,10 +1,11 @@
-package com.example.pocketguard
+package com.example.pocketguard.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Button
+import com.example.pocketguard.R
 
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,15 +13,16 @@ class Login : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_login)
 
-        val gobutton = findViewById<Button>(R.id.go)
 
-        gobutton.setOnClickListener {
+        val goButton = findViewById<Button>(R.id.go)
+
+        goButton.setOnClickListener {
             val intent = Intent(this, Dashboard::class.java)
             startActivity(intent)
         }
 
-        val newUserbutton = findViewById<Button>(R.id.new_user)
-        newUserbutton.setOnClickListener {
+        val newUserButton = findViewById<Button>(R.id.new_user)
+        newUserButton.setOnClickListener {
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }

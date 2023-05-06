@@ -13,14 +13,74 @@
         android:theme="@style/Theme.PocketGuard"
         tools:targetApi="31">
         <activity
-            android:name=".EmergencyFundMain"
+            android:name=".activities.CurrentExpenseView"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CurrentFundView"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ViewAllExpense"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AllExistingExpense"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AllExistingExpenses"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AllExistingFunds"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AvailableFunds"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TotalExpense"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddExpense"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SavingGoalsMain"
+            android:name=".activities.IncomeTrackingMain"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ExpenseTrackingMain"
+            android:exported="false"
+            android:label="@string/title_activity_expense_tracking_main"
+            android:theme="@style/Theme.PocketGuard" />
+        <activity
+            android:name=".activities.ViewExpense"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.ExistingFunds"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.CreateNewFund"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.EmergencyFundMain"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.SavingGoalsMain"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -41,28 +101,28 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Dashboard"
+            android:name=".activities.Dashboard"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".UserProfile"
+            android:name=".activities.UserProfile"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SignUp"
+            android:name=".activities.SignUp"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Login"
+            android:name=".activities.Login"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -73,7 +133,7 @@
             android:exported="false"
             android:label="@string/title_activity_login" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

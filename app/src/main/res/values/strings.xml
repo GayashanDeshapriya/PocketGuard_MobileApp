@@ -1,27 +1,24 @@
 <resources>
+    //main text for app
     <string name="app_name">Pocket Guard</string>
-    <string name="slogan">We Save Your Money</string>
+    <string name="slogan">We Manage Your Money</string>
+    <string name="welcome_buddy">Welcome Buddy</string>
+    <string name="date">Date</string>
 
+
+    //user profile related text
     <string name="update">UPDATE</string>
     <string name="welcome_message">Welcome</string>
     <string name="full_name">Gayashan Deshapriya</string>
     <string name="user_name">Gayashan99</string>
     <string name="go">Go</string>
     <string name="new_user">New User? SIGN UP</string>
-
-    <string name="welcome_buddy">Welcome Buddy</string>
-
     <string name="full_name_hint">Full Name</string>
     <string name="user_name_hint">User Name</string>
     <string name="email_hint">E-mail</string>
     <string name="phone_hint">Mobile No</string>
-
     <string name="email">gayashan123@gmail.com</string>
     <string name="phone">+94 1234567</string>
-
-    <string name="expense">Expense Tracking</string>
-    <string name="budget">Budget Manage</string>
-
     <string name="Create_Account">Create Account</string>
     <string name="sign_msg">Sign Up To Start Your New Journey</string>
     <string name="Hello_there_welcome_back">Hello there welcome back</string>
@@ -41,13 +38,31 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
 
+    //Emergency fund
+    <string name="fund_hint">Fund Name</string>
+    <string name="fund_amount">Amount</string>
+    <string name="fund_dis">Description</string>
 
+    //expense tracking
+    <string name="expense_lower">Expense Tracking</string>
+    <string name="expense_upper">Expense Tracking</string>
+    <string name="expense_add_btn">Add New Expense</string>
+    <string name="expense_total_btn">Total Expense</string>
+    <string name="expense_view_btn2">View Expense</string>
+
+    //income tracking
+    <string name="income">Income Tracking</string>
+    <string name="income_add">Add New Income</string>
+    <string name="income_view">All Incomes</string>
+
+    //saving goals
+    <string name="saving">Saving Goals</string>
+    <string name="saving_add">Add New Saving Goal</string>
+    <string name="saving_view">All Saving Goals</string>
     <string name="goal">Your Goal</string>
-    <string name="goal_description">jgrenhiernbvhierhg</string>
-    <string name="amount">Your Amount</string>
-    <string name="amount_description">Rs 20000.00</string>
-    <string name="date">Date</string>
+    <string name="goal_description">this is my goal</string>
     <string name="save">SAVING GOALS</string>
+    <string name="title_activity_expense_tracking_main">ExpenseTrackingMain</string>
 
 
 </resources>

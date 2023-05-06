@@ -5,20 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".UserProfile"
+    tools:context=".activities.UserProfile"
     android:padding="20dp">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="160dp"
             android:padding="20dp"
             android:background="@drawable/rounded_corner">
 
             <ImageView
                 android:id="@+id/profile_image"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_centerVertical="true"
-                android:src="@drawable/profile_icon" />
+                android:src="@drawable/profile_icon"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profile_image"
+                android:layout_alignEnd="@+id/profile_image"
+                android:layout_marginTop="-40dp"
+                android:paddingLeft="20dp"
+                android:src="@drawable/camera_icon" />
+
             <TextView
                 android:id="@+id/fullname_field"
                 android:layout_width="wrap_content"
@@ -26,11 +37,11 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/profile_image"
-                android:fontFamily="@font/bangers"
                 android:includeFontPadding="false"
                 android:text="@string/full_name"
-                android:textColor="#000"
-                android:textSize="20sp" />
+                android:textSize="35sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/username_field"
                 android:layout_width="wrap_content"
@@ -40,26 +51,18 @@
                 android:layout_toRightOf="@+id/profile_image"
                 android:includeFontPadding="false"
                 android:text="@string/user_name"
-                android:textSize="14sp" />
-            <TextView
-                android:id="@+id/edit_field"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/profile_image"
-                android:layout_marginLeft="40dp"
-                android:includeFontPadding="false"
-                android:paddingTop="-2dp"
-                android:text="edit"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
 
 
        </RelativeLayout>
 
         <LinearLayout
         android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp"
+        android:layout_marginTop="-45dp"
         android:layout_width="match_parent"
-        android:padding="10dp">
+        android:padding="20dp">
         <com.google.android.material.card.MaterialCardView
             android:layout_height="125dp"
             android:layout_margin="10dp"
@@ -76,10 +79,9 @@
                     android:layout_centerHorizontal="true"
                     android:layout_height="30dp"
                     android:layout_width="30dp"
-                    android:src="@drawable/payin"
+                    android:src="@drawable/icons_and_logo"
                     />
                 <TextView
-                    android:fontFamily="@font/bangers"
                     android:id="@+id/payment_label"
                     android:includeFontPadding="false"
                     android:layout_centerInParent="true"
@@ -87,7 +89,9 @@
                     android:layout_width="match_parent"
                     android:gravity="center"
                     android:text="$500"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
                 <TextView
                     android:id="@+id/payment_desc"
                     android:includeFontPadding="false"
@@ -95,8 +99,10 @@
                     android:layout_centerHorizontal="true"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Pay In"
-                    android:textSize="20sp" />
+                    android:text="INCOMES"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
             </RelativeLayout>
                 </com.google.android.material.card.MaterialCardView>
                     <com.google.android.material.card.MaterialCardView
@@ -114,18 +120,19 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_height="30dp"
                                 android:layout_width="30dp"
-                                android:src="@drawable/payin" />
+                                android:src="@drawable/icons_and_logo" />
 
                             <TextView
                                 android:id="@+id/payment_in"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
-                                android:fontFamily="@font/bangers"
-                                android:includeFontPadding="false"
                                 android:gravity="center"
+                                android:includeFontPadding="false"
                                 android:text="$150"
-                                android:textSize="20sp" />
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
                             <TextView
                                 android:id="@+id/payment_out"
                                 android:includeFontPadding="false"
@@ -133,8 +140,10 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_height="wrap_content"
                                 android:layout_width="wrap_content"
-                                android:text="Pay Out"
-                                android:textSize="20sp" />
+                                android:text="EXPENSE"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                />
                         </RelativeLayout>
                     </com.google.android.material.card.MaterialCardView>
 
@@ -201,14 +210,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
-                android:text="@string/update" />
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
             <Button
                 android:id="@+id/back1"
                 android:background="@drawable/button_bg"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:text="back" />
+                android:text="back"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
 
 
     </LinearLayout>

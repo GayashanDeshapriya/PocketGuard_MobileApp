@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1012149488985",
+    "firebase_url": "https://pocket-guard-5bea7-default-rtdb.firebaseio.com",
+    "project_id": "pocket-guard-5bea7",
+    "storage_bucket": "pocket-guard-5bea7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012149488985:android:3ece89063adf90e3385048",
+        "android_client_info": {
+          "package_name": "com.example.pocketguard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012149488985-uffmob2js2jdptfn92clkgfetotfrcai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcfb08vOfTRJYyTQpygoTRkeYraGFWVMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012149488985-uffmob2js2jdptfn92clkgfetotfrcai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
