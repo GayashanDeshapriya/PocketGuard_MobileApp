@@ -13,6 +13,38 @@
         android:theme="@style/Theme.PocketGuard"
         tools:targetApi="31">
         <activity
+            android:name=".activities.CurrentIncomeView"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AllExistingIncome"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddSaving"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddIncome"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UserProfile"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.AddAccountDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SignIn"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SignUp"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.CurrentExpenseView"
             android:exported="false" />
         <activity
@@ -102,27 +134,6 @@
         </activity>
         <activity
             android:name=".activities.Dashboard"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".activities.UserProfile"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".activities.SignUp"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".activities.Login"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -15,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 class CurrentExpenseView : AppCompatActivity() {
 
-    private lateinit var tvExpenseId: TextView
+
     private lateinit var tvExpenseName: TextView
     private lateinit var tvExpenseAmount: TextView
     private lateinit var tvExpenseCategory: TextView
@@ -68,7 +68,7 @@ class CurrentExpenseView : AppCompatActivity() {
     }
 
     private fun initView() {
-        tvExpenseId = findViewById(R.id.tvExpenseId)
+
         tvExpenseName = findViewById(R.id.tvExpenseName)
         tvExpenseAmount = findViewById(R.id.tvExpenseAmount)
         tvExpenseCategory = findViewById(R.id.tvExpenseCategory)
@@ -79,9 +79,9 @@ class CurrentExpenseView : AppCompatActivity() {
     }
 
     private fun setValuesToViews() {
-        tvExpenseId.text = intent.getStringExtra("expenseId")
+
         tvExpenseName.text = intent.getStringExtra("expenseName")
-        tvExpenseAmount.text = intent.getStringExtra("expenseAmount")
+        tvExpenseAmount.text = intent.getIntExtra("expenseAmount", 0).toString()
         tvExpenseCategory.text = intent.getStringExtra("expenseCategory")
         tvExpenseDescription.text = intent.getStringExtra("expenseDescription")
     }
@@ -125,7 +125,7 @@ class CurrentExpenseView : AppCompatActivity() {
 
             //setting updated data to our textviews
             tvExpenseName.text = etExpenseName.text.toString()
-            tvExpenseAmount.text =  etExpenseAmount.text.toString()
+            tvExpenseAmount.text = etExpenseAmount.text.toString()
             tvExpenseCategory.text =  etExpenseCategory.text.toString()
             tvExpenseDescription.text = etExpenseDescription.text.toString()
 

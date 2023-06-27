@@ -14,7 +14,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 class AddExpense : AppCompatActivity() {
 
-    private lateinit var etdate: EditText
+    private lateinit var etName: EditText
     private lateinit var etAmount: EditText
     private lateinit var etCategory: EditText
     private lateinit var etDescription: EditText
@@ -25,7 +25,7 @@ class AddExpense : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_expense)
 
-        etdate = findViewById(R.id.expenseName)
+        etName = findViewById(R.id.expenseName)
         etAmount = findViewById(R.id.expense_amount)
         etCategory = findViewById(R.id.expense_category)
         etDescription = findViewById(R.id.expense_description)
@@ -40,25 +40,25 @@ class AddExpense : AppCompatActivity() {
         val myImage = findViewById<ImageView>(R.id.back_arrow)
         myImage.setOnClickListener {
             val intent = Intent(this, ExpenseTrackingMain::class.java)
-            startActivity(intent)
+           startActivity(intent)
         }
 
 
     }
-
-
     private fun saveExpenseData() {
         //getting values
-        val expenseDate = etdate.text.toString()
-        val expenseAmount = etAmount.text.toString()
+        val expenseDate = etName.text.toString()
+        val expenseAmountString = etAmount.text.toString()
         val expenseCategory = etCategory.text.toString()
         val expenseDescription = etDescription.text.toString()
 
+
+
         if (expenseDate.isEmpty()) {
-            etdate.error = "Please enter the fund name"
+            etName.error = "Please enter the fund name"
             return
         }
-        if (expenseAmount.isEmpty()) {
+        if (expenseAmountString.isEmpty()) {
             etAmount.error = "Please enter the amount"
             return
         }
@@ -69,13 +69,13 @@ class AddExpense : AppCompatActivity() {
 
         val expenseId = dbRef.push().key!!
 
-        val expense = ExpenseModel(expenseId, expenseDate, expenseAmount, expenseCategory,expenseDescription)
+        val expense = ExpenseModel(expenseId, expenseDate, expenseAmountString, expenseCategory,expenseDescription)
 
         dbRef.child(expenseId).setValue(expense)
             .addOnCompleteListener {
                 Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_LONG).show()
 
-                etdate.text.clear()
+                etName.text.clear()
                 etAmount.text.clear()
                 etCategory.text.clear()
                 etDescription.text.clear()
@@ -83,6 +83,6 @@ class AddExpense : AppCompatActivity() {
             .addOnFailureListener { err ->
                 Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
             }
-    }
+        }
 
 }

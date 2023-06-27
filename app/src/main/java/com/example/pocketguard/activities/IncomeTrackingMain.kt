@@ -24,9 +24,9 @@ class IncomeTrackingMain : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val viewIncomeButton = findViewById<Button>(R.id.incomebtn2)
-        viewIncomeButton.setOnClickListener {
-            val intent = Intent(this, ViewIncome::class.java)
+        val viewExpenseButton = findViewById<Button>(R.id.ViewIncome)
+        viewExpenseButton.setOnClickListener {
+            val intent = Intent(this, AllExistingIncome::class.java)
             startActivity(intent)
         }
 

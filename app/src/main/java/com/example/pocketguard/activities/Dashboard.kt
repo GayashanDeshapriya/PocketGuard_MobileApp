@@ -3,15 +3,34 @@ package com.example.pocketguard.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import com.example.pocketguard.R
+import com.example.pocketguard.databinding.ActivityDashboardBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class Dashboard : AppCompatActivity() {
+
+    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var binding: ActivityDashboardBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
+
+        binding = ActivityDashboardBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        binding.logout.setOnClickListener {
+            firebaseAuth.signOut()
+            val intent = Intent(this, SignIn::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         val myImage = findViewById<ImageView>(R.id.LogoImage)
         myImage.setOnClickListener {
@@ -51,6 +70,5 @@ class Dashboard : AppCompatActivity() {
             val intent = Intent(this, EmergencyFundMain::class.java)
             startActivity(intent)
         }
-
     }
 }

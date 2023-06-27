@@ -51,7 +51,7 @@
         android:background="@drawable/button_bg"/>
 
     <Button
-        android:id="@+id/incomebtn2"
+        android:id="@+id/ViewIncome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"

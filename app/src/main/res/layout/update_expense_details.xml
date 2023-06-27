@@ -1,53 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="20dp"
+    android:layout_marginTop="0dp">
 
-    <EditText
-        android:id="@+id/etExpenseName"
+
+    <RelativeLayout
+        android:layout_width="384dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/LogoImage"
+            android:layout_width="159dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:contentDescription="@string/profile_picture_description"
+            android:src="@drawable/icons_and_logo" />
+
+        <TextView
+            android:id="@+id/LogoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/LogoImage"
+            android:text="Update Expense"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Fund Name"
-        android:inputType="textPersonName" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    <EditText
-        android:id="@+id/etExpenseAmount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Fund Amount" />
-
-    <EditText
-        android:id="@+id/etExpenseCategory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Fund Amount" />
+        <EditText
+            android:id="@+id/etExpenseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Expense Name"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
 
 
+        <EditText
+            android:id="@+id/etExpenseAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Expense Amount"
+            android:padding="16dp"/>
 
-    <EditText
-        android:id="@+id/etExpenseDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Fund Description"
-        android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/etExpenseCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Expense Category"
+            android:padding="16dp"/>
 
-    <Button
-        android:id="@+id/btnUpdateData"
-        android:background="@drawable/button_bg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Update Data" />
 
+        <EditText
+            android:id="@+id/etExpenseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Expense Description"
+            android:inputType="textPersonName"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/btnUpdateData"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:text="Update Data"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
 
 </LinearLayout>

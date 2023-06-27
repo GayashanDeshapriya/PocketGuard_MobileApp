@@ -5,10 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities."
     android:padding="20dp"
-    android:layout_marginTop="40dp"
-    >
+    android:layout_marginTop="0dp">
 
 
     <RelativeLayout
@@ -17,7 +15,7 @@
 
         <ImageView
             android:id="@+id/LogoImage"
-            android:layout_width="144dp"
+            android:layout_width="159dp"
             android:layout_height="match_parent"
             android:layout_gravity="left"
             android:contentDescription="@string/profile_picture_description"
@@ -29,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/LogoImage"
-            android:text="Update Funds"
+            android:text="Update Income"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -42,34 +40,43 @@
         android:padding="10dp">
 
         <EditText
-            android:id="@+id/etFundName"
+            android:id="@+id/etIncomeName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Fund Name"
-            android:padding="16dp"
-            />
+            android:hint="Income Name"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
 
 
         <EditText
-            android:id="@+id/etFundAmount"
+            android:id="@+id/etIncomeAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="Fund Amount"
+            android:hint="Income Amount"
             android:padding="16dp"/>
 
         <EditText
-            android:id="@+id/etFundDescription"
+            android:id="@+id/etIncomeCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="Fund Description"
+            android:hint="Income Category"
             android:padding="16dp"/>
 
 
+        <EditText
+            android:id="@+id/etIncomeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Income Description"
+            android:inputType="textPersonName"
+            android:padding="16dp"/>
 
         <Button
             android:id="@+id/btnUpdateData"

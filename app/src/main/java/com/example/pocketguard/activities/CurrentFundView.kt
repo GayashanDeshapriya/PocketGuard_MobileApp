@@ -16,7 +16,7 @@ import com.google.firebase.ktx.Firebase
 
 class CurrentFundView : AppCompatActivity() {
 
-    private lateinit var tvFundId: TextView
+
     private lateinit var tvFundName: TextView
     private lateinit var tvFundAmount: TextView
     private lateinit var tvFundDescription: TextView
@@ -73,7 +73,7 @@ class CurrentFundView : AppCompatActivity() {
 
 
     private fun initView() {
-        tvFundId = findViewById(R.id.tvFundId)
+
         tvFundName = findViewById(R.id.tvFundName)
         tvFundAmount = findViewById(R.id.tvFundAmount)
         tvFundDescription = findViewById(R.id.tvFundDescription)
@@ -83,7 +83,7 @@ class CurrentFundView : AppCompatActivity() {
     }
 
     private fun setValuesToViews() {
-        tvFundId.text = intent.getStringExtra("fundId")
+
         tvFundName.text = intent.getStringExtra("fundName")
         tvFundAmount.text = intent.getStringExtra("fundAmount")
         tvFundDescription.text = intent.getStringExtra("fundDescription")

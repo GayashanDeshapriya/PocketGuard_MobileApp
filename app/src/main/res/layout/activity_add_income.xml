@@ -57,9 +57,10 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/IncomeDate"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="Date"
+                android:hint="Income Name"
 
                 >
 
@@ -75,7 +76,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-
+                android:id="@+id/IncomeAmount"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:hint="Amount"
@@ -94,7 +95,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-
+                android:id="@+id/IncomeCategory"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:hint="Category"
@@ -111,7 +112,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-
+                android:id="@+id/IncomeDescription"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:hint="Description"
@@ -121,7 +122,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/addbtn"
+            android:id="@+id/btnSave"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="ADD"

@@ -9,21 +9,22 @@
 
     <ImageView
         android:id="@+id/MainLogo"
-        android:layout_width="278dp"
-        android:layout_height="443dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="394dp"
+        android:layout_height="336dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.138"
         app:srcCompat="@drawable/icons_and_logo" />
 
     <TextView
         android:id="@+id/textLogo"
-        android:layout_width="343dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="-70dp"
+        android:layout_width="415dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="112dp"
         android:fontFamily="@font/bangers"
         android:text="@string/app_name"
         android:textAlignment="center"
@@ -35,17 +36,17 @@
 
     <TextView
         android:id="@+id/slogan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="239dp"
+        android:layout_height="43dp"
         android:fontFamily="@font/bangers"
         android:text="@string/slogan"
         android:textAlignment="center"
         android:textSize="25sp"
-        android:layout_marginTop="-60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textLogo"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
