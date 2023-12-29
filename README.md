@@ -11,7 +11,7 @@
 ## Emergency Fund Management: 
 - Ensure financial security with dedicated features for emergency fund tracking.
 
-![Imgur](https://github.com/GayashanDeshapriya/PocketGuard_MobileApp/assets/94686812/8b967e4e-2207-4266-8ce0-8d5b2b871803)
+![Imgur](https://github.com/GayashanDeshapriya/PocketGuard_MobileApp/assets/94686812/d4607199-e6ee-4d66-9872-eda406e9a82b)
 
 
 
